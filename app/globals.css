@@ -130,6 +130,9 @@ body {
   .black {
     @apply text-[#0A2036]  text-sm not-italic font-medium;
   }
+  .dodger-blue {
+    @apply text-[#007BFF]
+  }
 
   /* Hero */
   .hero-map {

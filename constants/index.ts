@@ -20,3 +20,61 @@ export const SERVICES = [
     {icon: '/Brain.png', key: 'brain', label: 'Нейрология'},
     {icon: '/Lung.png', key: 'lung', label: 'Пульмонология'},
 ]
+
+export const CLINICS = [
+    {
+        logo: '/akfa.png',
+        key: 'akfa',
+        grade_quantity: '4.9 (120)',
+        name: 'Akfa Medline',
+        working_hours: '9:00 - 19:00 Пн-Пт',
+        address: 'г.Ташкент, Алмазарский район, ул. Кичик Халка йули, 5А',
+        tel: '+998 71 203-30-03, 1141',
+        href: '/',
+        width: 138,
+        height: 64
+    },
+    {
+        logo: '/nano.png',
+        key: 'nano',
+        grade_quantity: '4.7 (100)',
+        name: 'Nano Medical Clinic',
+        working_hours: '9:00 - 19:00 Пн-Пт',
+        address: 'г.Ташкент, Алмазарский район, ул. Кичик Халка йули, 5А',
+        tel: '+998 71 203-30-03, 1141',
+        href: '/',
+        width: 131,
+        height: 64
+    },
+    {
+        logo: '/prof.png',
+        key: 'nano',
+        grade_quantity: '4.5 (70)',
+        name: 'Prof Med Service',
+        working_hours: '9:00 - 19:00 Пн-Пт',
+        address: 'г.Ташкент, Алмазарский район, ул. Кичик Халка йули, 5А',
+        tel: '+998 71 203-30-03, 1141',
+        href: '/',
+        width: 78,
+        height: 64
+    },
+    {
+        logo: '/city.png',
+        key: 'nano',
+        grade_quantity: '4.6 (55)',
+        name: 'Citymed clinic',
+        working_hours: '9:00 - 19:00 Пн-Пт',
+        address: 'г.Ташкент, Алмазарский район, ул. Кичик Халка йули, 5А',
+        tel: '+998 71 203-30-03, 1141',
+        href: '/',
+        width: 176,
+        height: 51
+    }
+]
+
+export const DOCTORS = [
+    {image: "/doctor1.png",name: "Алексей Петров",specialization: "Кардиолог",grade_quantity: '4.9 (120)'},
+    {image: "/doctor2.png",name: "Анна Михайлова",specialization: "Отоларинголог",grade_quantity: '4.5 (70)'},
+    {image: "/doctor3.png",name: "Максим Соколов",specialization: "Ортопед",grade_quantity: '4.7 (92)'},
+    {image: "/doctor4.png",name: "Екатерина Иванова",specialization: "Педиатр",grade_quantity: '4.7 (150)'},
+]
