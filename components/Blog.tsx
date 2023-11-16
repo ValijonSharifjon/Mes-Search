@@ -1,10 +1,28 @@
 import React from 'react';
+import HeadingText from "@/components/HeadingText";
+import {NEWS} from "@/constants";
+import Image from "next/image";
+import Link from "next/link";
 
 const Blog = () => {
     return (
-        <div>
-            Blog
-        </div>
+        <section className="max-container flex flex-col mt-[125px] gap-[37px] h-[520px]">
+            <HeadingText title="Блог"/>
+            <div className="flex flex-row gap-[39px]">
+                {NEWS.map((n) => (
+                    <Link href="/">
+                        <div className="w-[270px] h-[335px] rounded-[15px] bg-[#ECF5FF]">
+                            <Image src={n.image} alt="image" width={270} height={200}/>
+                            <p className="text-[#0A2036] text-[15px] font-normal mt-[17px] ml-[15px]">{n.date}</p>
+                            <h1 className="text-[#0A2036] text-[20px] font-semibold ml-[15px] leading-6 max-w-[215px]">{n.title}</h1>
+                        </div>
+                    </Link>
+                ))}
+            </div>
+            <Link href="/" className="flex justify-center text-[#007BFF] text-[25px] font-normal underline">
+                Eщё новостей
+            </Link>
+        </section>
     );
 };
 
