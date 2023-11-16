@@ -1,6 +1,6 @@
 export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'Домой' },
-    { href: '/', key: 'services', label: 'Услуги' },
+    { href: '/services', key: 'services', label: 'Услуги' },
     { href: '/', key: 'clinics', label: 'Клиники' },
     { href: '/', key: 'doctors ', label: 'Докторы ' },
     { href: '/', key: 'about_us', label: 'О нас' },

@@ -20,7 +20,7 @@ const Services = () => {
                     </Link>
                 ))}
             </div>
-            <Link href="/" className="flex justify-center text-[#007BFF] text-[25px] font-normal underline">
+            <Link href="/services" className="flex justify-center text-[#007BFF] text-[25px] font-normal underline">
                 Eщё услуги
             </Link>
         </section>

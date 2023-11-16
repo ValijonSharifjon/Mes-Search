@@ -41,7 +41,7 @@ const Navbar = () => {
                    <Link href="/" className="black hover:text-[#007BFF]">
                        Войти
                    </Link>
-                   <Button type="button" title="Регистрация " variant="btn_dark_yellow"/>
+                   <Button type="button" title="Регистрация " variant="btn_dark_blue"/>
                </div>
            </div>
        </nav>
