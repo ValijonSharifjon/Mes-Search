@@ -3,6 +3,7 @@ import HeadingText from "@/components/HeadingText";
 import {CLINICS} from "@/constants";
 import Link from "next/link";
 import Image from "next/image";
+import Button from "@/components/Button";
 
 const Clinics = () => {
     return (
@@ -11,7 +12,7 @@ const Clinics = () => {
             <div className="flex gap-[41px]">
                 {CLINICS.map((clinic) => (
                     <Link href={clinic.href} key={clinic.key}>
-                        <div className="w-[270px] h-[270px] rounded-[15px] bg-[#ECF5FF] flex flex-col">
+                        <div className="w-[270px] h-[270px] rounded-[15px] bg-[#ECF5FF] flex flex-col shadow-md transition duration-300 ease-in-out hover:shadow-lg hover:scale-[1.001]">
                             <div className="flex flex-col pl-[20px] pt-[15px]">
                                 <div className="w-[138px] h-[64px] flex items-center">
                                     <Image src={clinic.logo} alt={clinic.key} width={clinic.width} height={clinic.height}/>
@@ -54,8 +55,8 @@ const Clinics = () => {
                     </Link>
                 ))}
             </div>
-            <Link href="/" className=" text-[#007BFF] text-[25px] font-normal underline flex justify-center">
-                Eщё клиники
+            <Link href="/clinics" className="flex justify-center">
+                <Button type="button" title="Eщё клиники" variant="btn_dark_green_outline" textSize="20" fontWeight="font-normal" h="45px" w="205px"/>
             </Link>
         </section>
     );

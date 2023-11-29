@@ -28,12 +28,14 @@ body {
     @apply  bg-green-90 px-8 py-4 text-white transition-all hover:bg-black
   }
   .btn_dark_blue {
-    @apply  bg-[#007BFF] px-[15px] py-[15px] text-white transition-all hover:bg-[#0664C2] w-[126px] h-[45px]
+    @apply  bg-[#007BFF] px-[15px] py-[15px] text-white rounded-[25px] transition-all hover:bg-[#0664C2]
   }
   .btn_dark_green_outline  {
-    @apply border-gray-20 bg-green-90 px-8 py-5 text-white
+    @apply px-[32px] py-[13px] text-[#007BFF] rounded-[30px] border-solid border-[1px] border-[#007BFF] hover:bg-[#007BFF] hover:text-[#fff]
   }
-
+  .btn_dark_blue_outline  {
+    @apply
+  }
   .max-container {
     @apply mx-auto max-w-[1200px];
   }

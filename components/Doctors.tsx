@@ -3,6 +3,7 @@ import HeadingText from "@/components/HeadingText";
 import {DOCTORS} from "@/constants";
 import Link from "next/link";
 import Image from "next/image";
+import Button from "@/components/Button";
 
 const Doctors = () => {
     return (
@@ -11,7 +12,7 @@ const Doctors = () => {
            <div className="flex gap-[39px]">
                {DOCTORS.map((doctor) => (
                    <Link href="/" key={doctor.name} >
-                       <div className="w-[270px] h-[335px] rounded-[15px]">
+                       <div className="w-[270px] h-[335px] rounded-[15px] shadow-md transition duration-300 ease-in-out hover:shadow-lg hover:scale-[1.001]">
                            <div>
                                <Image src={doctor.image} alt="image" width={270} height={260}/>
                            </div>
@@ -27,10 +28,9 @@ const Doctors = () => {
                    </Link>
                ))}
            </div>
-           <Link href="/" className="flex justify-center text-[#007BFF] text-[25px] font-normal underline">
-               Еще докторы
+           <Link href="/doctors" className="flex justify-center">
+               <Button type="button" title="Еще докторы" variant="btn_dark_green_outline" textSize="20" fontWeight="font-normal" h="45px" w="202px"/>
            </Link>
-
        </section>
     );
 };

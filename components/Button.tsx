@@ -7,13 +7,17 @@ type ButtonProps = {
     variant: string;
     icon?: string;
     full?: string;
+    textSize: string;
+    fontWeight: string;
+    w: string;
+    h: string;
 }
 
-const Button = ({type, title, variant, icon, full}: ButtonProps) => {
+const Button = ({type, title, variant, icon, full, textSize, fontWeight,w,h}: ButtonProps) => {
     return (
-        <button type={type} className={`flexCenter gap-3 rounded-full  ${variant} ${full && `w-full`}`}>
-            {icon && <Image src={icon} alt={title} width={24} height={24} />}
-            <label className="text-white text-[14px] cursor-pointer font-medium">{title}</label>
+        <button type={type} className={`flexCenter w-[${w}] h-[${h}] ${variant} ${full && `w-full`}`}>
+            <label
+                className={`text-[${textSize}px] flex items-center justify-center cursor-pointer ${fontWeight}`}>{title}</label>
         </button>
     );
 };

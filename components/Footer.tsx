@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#0A2036] h-[474px] mt-[149px] flex  flex-col gap-[41px]">
+        <footer className="bg-[#0A2036] h-[474px] flex  flex-col gap-[41px]">
             <div className="h-[303px] max-container flex flex-row gap-[89px] mt-[89px]">
                 <div className="flex flex-col gap-[17px] ">
                     <div className="w-[183px] h-[55px] bg-[#fff]"/>
@@ -16,16 +16,16 @@ const Footer = () => {
                     </p>
                     <div className="flex flex-col gap-[36px]">
                         <div className="flex flex-row gap-[36px]">
-                            <div className="w-[46px] h-[46px] rounded-full bg-[#fff] p-2">
+                            <div className="w-[46px] h-[46px] rounded-full bg-[#fff] p-2 hover:ring-2 hover:ring-[#fff]">
                                 <Image src="/instagram.png" alt="instagram" width={46} height={46}/>
                             </div>
-                            <div className="w-[46px] h-[46px] rounded-full bg-[#fff] p-2.5">
+                            <div className="w-[46px] h-[46px] rounded-full bg-[#fff] p-2.5 hover:ring-2 hover:ring-[#fff]">
                                 <Image src="/linkedin.png" alt="instagram" width={46} height={46}/>
                             </div>
-                            <div className="w-[46px] h-[46px] rounded-full bg-[#fff] p-2">
+                            <div className="w-[46px] h-[46px] rounded-full bg-[#fff] p-2 hover:ring-2 hover:ring-[#fff]">
                                 <Image src="/telegram.png" alt="instagram" width={46} height={46}/>
                             </div>
-                            <div className="w-[46px] h-[46px] rounded-full bg-[#fff] p-2">
+                            <div className="w-[46px] h-[46px] rounded-full bg-[#fff] p-2 hover:ring-2 hover:ring-[#fff]">
                                 <Image src="/facebook.png" alt="instagram" width={46} height={46}/>
                             </div>
                         </div>
