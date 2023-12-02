@@ -1,4 +1,5 @@
-import React from 'react';
+"use client"
+import React, {useEffect, useState} from 'react';
 import HeadingText from "@/components/HeadingText";
 import {CLINICS} from "@/constants";
 import Link from "next/link";
@@ -6,6 +7,19 @@ import Image from "next/image";
 import Button from "@/components/Button";
 
 const Clinics = () => {
+    const [data,setData] = useState<any>()
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('http://localhost:3001/clinics')
+                const jsonData = await response.json()
+                setData(jsonData)
+            }catch (error) {
+                throw new Error('Failed to fetch data')
+            }
+        }
+        fetchData()
+    },[])
     return (
         <section className="max-container h-[424px] mt-[125px] flex flex-col gap-[38px] justify-center">
             <HeadingText title="Клиники" />

@@ -13,13 +13,7 @@ export const WE_OFFER = [
     {icon: '/ConsultationIcon.svg', key: 'consultation', label: 'Онлайн консультации'},
 ]
 
-export const SERVICES = [
-    {icon: '/Heart.png', key: 'heart', label: 'Кардиология'},
-    {icon: '/Eye.png', key: 'eye', label: 'Офтальмология'},
-    {icon: '/Tooth.png', key: 'tooth', label: 'Стоматология'},
-    {icon: '/Brain.png', key: 'brain', label: 'Нейрология'},
-    {icon: '/Lung.png', key: 'lung', label: 'Пульмонология'},
-]
+
 
 export const CLINICS = [
     {
