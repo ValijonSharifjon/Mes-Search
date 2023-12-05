@@ -58,7 +58,8 @@ const Clinics = () => {
                                     </div>
                                     <p className="mt-[3px] text-[#0A2036] text-[12px] font-normal">
                                         Телефон:<br/>
-                                        {clinic.tel}</p>
+                                        {clinic.tel}
+                                    </p>
                                 </div>
                             </div>
                             <div className="flex justify-center">

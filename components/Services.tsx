@@ -5,6 +5,7 @@ import Link from "next/link";
 import MiscIcon from "@/components/MiscIcon";
 import Button from "@/components/Button";
 import {type} from "os";
+import {useServicesQuery} from "@/redux/API/serviceAPI";
 
 type ServicesType = {
     id: string;
@@ -12,19 +13,7 @@ type ServicesType = {
     icon: string;
 }
 const Services = () => {
-    const [data,setData] = useState<any>(null)
-    useEffect(() => {
-        const fetchData = async () => {
-           try {
-               const response = await fetch('http://localhost:3001/services')
-               const jsonData = await response.json()
-               setData(jsonData)
-           } catch (error) {
-               throw new Error('Failed to fetch data')
-           }
-        }
-        fetchData()
-    },[])
+   const {data} = useServicesQuery({})
 
     return (
         <section className="max-container h-[316px] mt-[124px] flex flex-col gap-[43px]">

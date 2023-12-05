@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {NAV_LINKS} from "@/constants";
 import Button from "@/components/Button";
+import {usePathname} from "next/navigation";
 
 const Navbar = () => {
     const [isNavbarFixed, setIsNavbarFixed] = useState(false);
@@ -21,6 +22,8 @@ const Navbar = () => {
         };
     }, []);
 
+    const pathname = usePathname()
+    console.log(pathname)
     return (
        <nav className={`${isNavbarFixed ? 'fixed' : ''} bg-[#fff] z-30 h-[89px] w-full`}>
            <div className="flexBetween max-container flex py-[0.375rem]">
@@ -29,7 +32,7 @@ const Navbar = () => {
                </Link>
                <ul className="flex gap-[30px]">
                    {NAV_LINKS.map((link) => (
-                       <Link href={link.href} key={link.key} className="text-[#0A2036]  text-sm not-italic font-medium hover:text-[#007BFF]">
+                       <Link href={link.href} key={link.key} className={`${pathname === link.href ? 'text-[#007BFF]' : 'text-[#0A2036] '} text-sm not-italic font-medium hover:text-[#007BFF]`}>
                            {link.label}
                        </Link>
                    ))}

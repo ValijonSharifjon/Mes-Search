@@ -21,7 +21,7 @@ const Page = () => {
         <section className="max-container mb-[140px]">
             <HeadingText title="Услуги"/>
             <div className=" mt-[47px]">
-                <Input placeholder="Поиск услуги" w="834px" h="50px"/>
+                <Input placeholder="Поиск услуги" w={834} h={50}/>
             </div>
             <div className="grid grid-cols-5 gap-[39px] mt-[64px]">
                 {

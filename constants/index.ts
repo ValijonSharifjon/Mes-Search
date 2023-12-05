@@ -3,7 +3,7 @@ export const NAV_LINKS = [
     { href: '/services', key: 'services', label: 'Услуги' },
     { href: '/clinics', key: 'clinics', label: 'Клиники' },
     { href: '/doctors', key: 'doctors ', label: 'Докторы ' },
-    { href: '/', key: 'about_us', label: 'О нас' },
+    { href: '/about_us', key: 'about_us', label: 'О нас' },
 ];
 
 export const WE_OFFER = [
