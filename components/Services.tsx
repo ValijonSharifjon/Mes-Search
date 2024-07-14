@@ -3,8 +3,8 @@ import React, {useEffect, useState} from 'react';
 import HeadingText from "@/components/HeadingText";
 import Link from "next/link";
 import MiscIcon from "@/components/MiscIcon";
-import Button from "@/components/Button";
 import {type} from "os";
+import {Button} from "@mui/material";
 import {useServicesQuery} from "@/redux/API/serviceAPI";
 
 type ServicesType = {
@@ -30,9 +30,11 @@ const Services = () => {
                     </Link>
                 ))}
             </div>
-            <Link href="/services" className="flex justify-center">
-                <Button type="button" title="Ещё услуги" variant="btn_dark_green_outline" textSize="20" fontWeight="font-normal" h="45px" w="183px"/>
-            </Link>
+            <div className="flex justify-center">
+                <Button variant="outlined" href="/services" size="large" style={{borderRadius: '25px',padding:'10px 32px'}}>
+                    Ещё услуги
+                </Button>
+            </div>
         </section>
     );
 };

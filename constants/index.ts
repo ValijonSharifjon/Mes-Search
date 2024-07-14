@@ -114,3 +114,11 @@ export const FOOTER_LINKS = [
         ]
     },
 ]
+
+export const INSTRUCTION = [
+    {index: '1', description: 'Найдите врача, которого вы хотите посетить'},
+    {index: '2', description: 'Нажмите кнопку "Записаться на врача"'},
+    {index: '3', description: 'Введите свои контактные данные'},
+    {index: '4', description: 'Выберите дату и время приема'},
+    {index: '5', description: 'Нажмите кнопку "Записаться"'},
+]

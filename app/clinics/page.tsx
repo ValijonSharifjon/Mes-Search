@@ -19,7 +19,7 @@ const Page = () => {
                 {data?.map((clinic : any) => (
                     <Link href={clinic.id} className="h-[250px] w-full bg-[#ECF5FF] rounded-[15px] flex flex-row gap-[32px] p-[23px]">
                         <div className="flex flex-col gap-[19px]">
-                            <Image src={clinic.logo} alt={clinic.name} width={160} height={80}/>
+                            <Image src="/large.png" alt={clinic.name} width={160} height={80}/>
                             <div className="flex flex-row mt-[5px]">
                                 {Array(5).fill(1).map((_,i) => <Image key={i} src="/Star.png" alt="star" width={15} height={15}/>)}
                                 <p className="text-[#0A2036] text-[12px] font-normal ml-[1px]">{clinic.stars}</p>

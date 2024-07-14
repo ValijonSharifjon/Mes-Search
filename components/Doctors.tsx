@@ -3,7 +3,7 @@ import HeadingText from "@/components/HeadingText";
 import {DOCTORS} from "@/constants";
 import Link from "next/link";
 import Image from "next/image";
-import Button from "@/components/Button";
+import Button from "@mui/material/Button";
 
 const Doctors = () => {
     return (
@@ -28,9 +28,11 @@ const Doctors = () => {
                    </Link>
                ))}
            </div>
-           <Link href="/doctors" className="flex justify-center">
-               <Button type="button" title="Еще докторы" variant="btn_dark_green_outline" textSize="20" fontWeight="font-normal" h="45px" w="202px"/>
-           </Link>
+           <div className="flex justify-center">
+               <Button variant="outlined" href="/doctors" size="large" style={{borderRadius: '25px',padding:'10px 32px'}}>
+                   Ещё докторы
+               </Button>
+           </div>
        </section>
     );
 };

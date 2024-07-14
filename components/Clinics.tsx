@@ -4,7 +4,7 @@ import HeadingText from "@/components/HeadingText";
 import {CLINICS} from "@/constants";
 import Link from "next/link";
 import Image from "next/image";
-import Button from "@/components/Button";
+import Button from "@mui/material/Button";
 
 const Clinics = () => {
     const [data,setData] = useState<any>()
@@ -70,9 +70,11 @@ const Clinics = () => {
                     </Link>
                 ))}
             </div>
-            <Link href="/clinics" className="flex justify-center">
-                <Button type="button" title="Eщё клиники" variant="btn_dark_green_outline" textSize="20" fontWeight="font-normal" h="45px" w="205px"/>
-            </Link>
+            <div className="flex justify-center">
+                <Button variant="outlined" href="/clinics" size="large" style={{borderRadius: '25px',padding:'10px 32px'}}>
+                    Ещё клиники
+                </Button>
+            </div>
         </section>
     );
 };

@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import {NAV_LINKS} from "@/constants";
-import Button from "@/components/Button";
+import Button from '@mui/material/Button';
 import {usePathname} from "next/navigation";
 
 const Navbar = () => {
@@ -22,8 +22,17 @@ const Navbar = () => {
         };
     }, []);
 
+    const buttonStyle = {
+        borderRadius: 22,
+        color: 'white',
+        backgroundColor: '#007BFF',
+        '&:hover': {
+            backgroundColor: '#0664C2',
+        },
+        padding: '10px 15px',
+    };
+
     const pathname = usePathname()
-    console.log(pathname)
     return (
        <nav className={`${isNavbarFixed ? 'fixed' : ''} bg-[#fff] z-30 h-[89px] w-full`}>
            <div className="flexBetween max-container flex py-[0.375rem]">
@@ -44,7 +53,7 @@ const Navbar = () => {
                    <Link href="/" className="black hover:text-[#007BFF]">
                        Войти
                    </Link>
-                   <Button type="button" title="Регистрация " variant="btn_dark_blue" textSize="14" fontWeight="font-medium" h="45px" w="126px"/>
+                   <Button variant="contained" href="/" style={buttonStyle} color="primary" size="medium">Регистрация</Button>
                </div>
            </div>
        </nav>

@@ -4,11 +4,10 @@ import Image from "next/image";
 
 type InputType = {
     placeholder: string;
-    w: number;
-    h: number;
+    w?: number;
+    h?: number;
 }
-const Input = ({placeholder,w,h}:InputType) => {
-    const ref = useRef<any>(null)
+const Input = ({placeholder}:InputType) => {
 
     return (
         <div className="relative flex justify-center items-center text-[#007BFF]">
